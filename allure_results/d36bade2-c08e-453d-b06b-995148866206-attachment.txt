@@ -1,0 +1,1 @@
+{'firstName': 'Nicole', 'lastName': 'Thomas', 'address': '5128 Sanchez Route\nJosephville, CA 99138', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-06-19', 'comment': 'Ненавижу самокаты', 'color': ['BLACK', 'GREY']}

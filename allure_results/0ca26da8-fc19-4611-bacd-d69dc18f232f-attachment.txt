@@ -1,0 +1,1 @@
+{'firstName': 'Nicholas', 'lastName': 'Reid', 'address': '8033 Dennis Spur\nReeseton, AZ 70091', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-04-21', 'comment': 'Ненавижу самокаты', 'color': ['BLACK']}

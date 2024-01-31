@@ -1,0 +1,1 @@
+{'firstName': 'Ann', 'lastName': 'Charles', 'address': '75749 Cain Throughway Apt. 130\nRodneyfurt, SD 58319', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-05-28', 'comment': 'Ненавижу самокаты'}

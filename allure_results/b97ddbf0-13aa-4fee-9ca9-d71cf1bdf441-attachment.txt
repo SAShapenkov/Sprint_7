@@ -1,0 +1,1 @@
+{'firstName': 'Anna', 'lastName': 'Williamson', 'address': '2240 Morgan Shores\nEast Kevinberg, CA 09728', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-06-27', 'comment': 'Ненавижу самокаты', 'color': ['BLACK']}

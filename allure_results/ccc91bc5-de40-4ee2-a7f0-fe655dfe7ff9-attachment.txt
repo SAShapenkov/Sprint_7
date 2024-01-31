@@ -1,0 +1,1 @@
+{'firstName': 'Nathaniel', 'lastName': 'Ramirez', 'address': 'PSC 0651, Box 6502\nAPO AA 88785', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-12-04', 'comment': 'Ненавижу самокаты'}
