@@ -14,9 +14,6 @@ class TestOrderOperations:
     def test_create_order_successful(self, color, create_order_payload):
         orr = OrderRequests()
         payload = create_order_payload
-        if color is not None:
-            payload["color"] = color
-        print(payload)
         response = orr.create_order_post(payload)
         assert "track" in response.keys()
 
