@@ -5,7 +5,7 @@ import json
 
 @allure.feature('Проверка авторизации курьеров')
 class TestCourierLogin:
-    @allure.description('Успешный вход зарегистрированного курьера')
+    @allure.title('Успешный вход зарегистрированного курьера')
     def test_login(self):
         crr = CourierRequests()
         payload = crr.create_user_payload()
@@ -13,13 +13,13 @@ class TestCourierLogin:
         response = crr.login_courier_post(payload)
         assert response.get('id') is not None
 
-    testdata = [
-        ('Jason Arnold', ''),
-        ('', '1234'),
-    ]
-
-    @pytest.mark.parametrize("login, password", testdata)
-    @allure.description('Проверка что без одного обязательного поля (логин или пароль) курьер не входит')
+    @pytest.mark.parametrize("login, password",
+                             [
+                                 ('Jason Arnold', ''),
+                                 ('', '1234'),
+                             ]
+                             )
+    @allure.title('Проверка что без одного обязательного поля (логин или пароль) курьер не входит')
     def test_required_fields_on_login(self, login, password):
         crr = CourierRequests()
         payload = crr.create_login_payload(login, password)
@@ -27,14 +27,14 @@ class TestCourierLogin:
         assert response['message'] == 'Недостаточно данных для входа'
 
 
-    @allure.description('Зарегистрированный курьер не может войти с неверным паролем')
+    @allure.title('Зарегистрированный курьер не может войти с неверным паролем')
     def test_login(self):
         crr = CourierRequests()
         payload = crr.create_login_payload('Jason Arnold', '12345')
         response = crr.login_courier_post(payload, status=404)
         assert response['message'] == 'Учетная запись не найдена'
 
-    @allure.description('Курьер, сначала созаднный а потом удаленный, не может войти в систему')
+    @allure.title('Курьер, сначала созаднный а потом удаленный, не может войти в систему')
     def test_courier_cant_login_after_deleting_account(self):
         crr = CourierRequests()
         payload = crr.create_user_payload()

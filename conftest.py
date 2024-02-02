@@ -1,10 +1,8 @@
 import pytest
 import allure
 from faker import Faker
-from reqs.courierRequests import CourierRequests
 
 faker = Faker()
-
 
 @pytest.fixture
 @allure.step('Конструируем запрос для отправки заказа')

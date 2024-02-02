@@ -5,7 +5,7 @@ from reqs.orderRequests import OrderRequests
 
 @allure.feature('Проверка создания и выгрузки списка заказов')
 class TestOrderOperations:
-    @allure.description('Проверка возможности заказать с разынми цветами, ответ содержит "track"')
+    @allure.title('Проверка возможности заказать с разынми цветами, ответ содержит "track"')
     @pytest.mark.parametrize('color', [
         ['BLACK'],
         ['GREY'],
@@ -17,7 +17,7 @@ class TestOrderOperations:
         response = orr.create_order_post(payload)
         assert "track" in response.keys()
 
-    @allure.description('Ручка возвращает список заказов')
+    @allure.title('Ручка возвращает список заказов')
     def test_get_order_returns_list(self):
         orr = OrderRequests()
         response = orr.get_orders_list()
