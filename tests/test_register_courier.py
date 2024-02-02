@@ -8,10 +8,10 @@ import json
 class TestCourierRegister:
 
     @allure.title('Успещная регистрация курьера')
-    def test_registration_login(self, create_courier_login_and_delete):
-        response = create_courier_login_and_delete
+    def test_registration_login(self, create_user_payload):
+        crr = CourierRequests()
+        response = crr.create_courier_post(create_user_payload)
         assert response['ok']
-
     @allure.title('Проверка ошибки пои создании двух курьеров с одинаковыми логинами')
     def test_create_existing_courier_login(self, create_user_payload):
         crr = CourierRequests()
