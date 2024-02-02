@@ -24,13 +24,6 @@ class CourierRequests(BaseRequests):
         url = f'{Constants.COURIER_URL}{courier_id}'
         return self.delete_request_and_check(url, data=data, status=status)
 
-    def create_user_payload(self):
-        data = {
-            "firstName": fake.name(),
-            "login": fake.name(),
-            "password": fake.pyint()
-        }
-        return json.dumps(data)
 
     def create_login_payload(self, login, password):
         data = {

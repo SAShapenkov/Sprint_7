@@ -1,16 +1,12 @@
 import allure
 from reqs.courierRequests import CourierRequests
 import pytest
-import json
 
 @allure.feature('Проверка авторизации курьеров')
 class TestCourierLogin:
     @allure.title('Успешный вход зарегистрированного курьера')
-    def test_login(self):
-        crr = CourierRequests()
-        payload = crr.create_user_payload()
-        crr.create_courier_post(payload)
-        response = crr.login_courier_post(payload)
+    def test_login(self, create_courier_login_and_delete):
+        response = create_courier_login_and_delete
         assert response.get('id') is not None
 
     @pytest.mark.parametrize("login, password",
@@ -35,9 +31,9 @@ class TestCourierLogin:
         assert response['message'] == 'Учетная запись не найдена'
 
     @allure.title('Курьер, сначала созаднный а потом удаленный, не может войти в систему')
-    def test_courier_cant_login_after_deleting_account(self):
+    def test_courier_cant_login_after_deleting_account(self, create_user_payload):
         crr = CourierRequests()
-        payload = crr.create_user_payload()
+        payload = create_user_payload
         crr.create_courier_post(payload)
         response = crr.login_courier_post(payload)
         courier_id = response["id"]
