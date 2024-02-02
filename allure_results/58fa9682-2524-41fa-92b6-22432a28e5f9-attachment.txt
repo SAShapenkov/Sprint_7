@@ -1,1 +1,0 @@
-{'firstName': 'Jody', 'lastName': 'Gibson', 'address': '91721 Lang Loaf\nPort Annettebury, NC 27181', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-07-02', 'comment': 'Ненавижу самокаты', 'color': ['GREY']}

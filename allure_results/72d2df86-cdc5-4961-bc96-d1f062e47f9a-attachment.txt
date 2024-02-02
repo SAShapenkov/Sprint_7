@@ -1,1 +1,0 @@
-{'firstName': 'Michael', 'lastName': 'Carson', 'address': '492 Blake Square Apt. 255\nMargaretmouth, WA 87250', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-02-03', 'comment': 'Ненавижу самокаты', 'color': ['GREY']}

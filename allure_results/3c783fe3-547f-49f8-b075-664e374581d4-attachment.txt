@@ -1,1 +1,0 @@
-{'firstName': 'Benjamin', 'lastName': 'Wilson', 'address': '3246 Peters Key Suite 173\nAngelafurt, NC 07470', 'metroStation': 1, 'phone': '+76665551122', 'rentTime': 2, 'deliveryDate': '2024-06-09', 'comment': 'Ненавижу самокаты', 'color': ['BLACK', 'GREY']}

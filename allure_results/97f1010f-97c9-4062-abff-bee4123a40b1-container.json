@@ -1,1 +1,0 @@
-{"uuid": "6d67705f-674d-448b-b49f-3ca6e7eb7de7", "children": ["df0e2612-0b27-43b5-9eef-7324f1a0666d"], "befores": [{"name": "create_user_payload", "status": "passed", "steps": [{"name": "Создание данных курьера", "status": "passed", "start": 1706867038128, "stop": 1706867038129}], "start": 1706867038128, "stop": 1706867038129}], "start": 1706867038128, "stop": 1706867038184}
